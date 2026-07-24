@@ -1,4 +1,4 @@
-const backendBase = "http://localhost:3000";
+const backendBase = "https://your-render-url.onrender.com";
 
 const platformHint = document.getElementById("platformHint");
 const platformRadios = document.querySelectorAll('input[name="platform"]');
