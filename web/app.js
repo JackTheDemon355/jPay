@@ -1,4 +1,4 @@
-const backendBase = "https://your-render-url.onrender.com";
+const backendBase = "https://jpay-7cpy.onrender.com/";
 
 const platformHint = document.getElementById("platformHint");
 const platformRadios = document.querySelectorAll('input[name="platform"]');
