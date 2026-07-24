@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>jPay Control Panel</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>jPay — Tap to Pay Control Panel</h1>
+
+    <section>
+      <h2>Select Platform</h2>
+      <label><input type="radio" name="platform" value="ios" checked /> iOS</label>
+      <label><input type="radio" name="platform" value="android" /> Android</label>
+      <p id="platformHint"></p>
+    </section>
+
+    <section>
+      <h2>jPay Products</h2>
+      <div id="productList"></div>
+
+      <h3>Add / Edit Product</h3>
+      <input id="prodId" placeholder="id (e.g. jp3)" />
+      <input id="prodName" placeholder="name" />
+      <input id="prodAmount" placeholder="amount in cents (e.g. 3000)" />
+      <input id="prodCurrency" placeholder="currency (e.g. aud)" value="aud" />
+      <button id="addProductBtn">Add Product</button>
+      <button id="editProductBtn">Edit Product</button>
+    </section>
+
+    <section>
+      <h2>Charge Product</h2>
+      <input id="chargeProductId" placeholder="product id (e.g. jp1)" />
+      <button id="chargeProductBtn">Create jPay Intent</button>
+      <pre id="productIntentResult"></pre>
+    </section>
+
+    <section>
+      <h2>Charge Custom Amount</h2>
+      <input id="customAmount" placeholder="amount in cents (e.g. 5000)" />
+      <input id="customCurrency" placeholder="currency" value="aud" />
+      <button id="chargeAmountBtn">Create jPay Intent</button>
+      <pre id="amountIntentResult"></pre>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
